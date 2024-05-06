@@ -1,3 +1,26 @@
+## mrt_cmake_modules (humble) - 1.0.9-4
+
+The packages in the `mrt_cmake_modules` repository were released into the `humble` distro by running `/home/z572/gits/revyos-ros/venv/bin/bloom-release -r humble mrt_cmake_modules` on `Mon, 06 May 2024 12:32:56 -0000`
+
+The `mrt_cmake_modules` package was released.
+
+Version of package(s) in repository `mrt_cmake_modules`:
+
+- upstream repository: https://github.com/KIT-MRT/mrt_cmake_modules.git
+- release repository: https://github.com/revyos-ros/mrt_cmake_modules-release.git
+- rosdistro version: `1.0.9-3`
+- old version: `1.0.9-3`
+- new version: `1.0.9-4`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## mrt_cmake_modules (rolling) - 1.0.9-1
 
 The packages in the `mrt_cmake_modules` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --ros-distro rolling mrt_cmake_modules` on `Wed, 08 Dec 2021 12:57:46 -0000`

@@ -1,0 +1,18 @@
+From 83098696845ea5623980bd7032268398efa23487 Mon Sep 17 00:00:00 2001
+From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
+Date: Tue, 14 May 2024 18:46:20 +0800
+Subject: [PATCH 2/2] add miss series.
+
+---
+ debian/patches/series | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/debian/patches/series b/debian/patches/series
+index e69de29..1cf02f9 100644
+--- a/debian/patches/series
++++ b/debian/patches/series
+@@ -0,0 +1 @@
++pr-34.patch
+-- 
+2.41.0
+

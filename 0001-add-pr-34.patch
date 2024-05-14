@@ -1,7 +1,7 @@
-From d51e6f4c94e49ae9b4aa794544fffbf1a07f0727 Mon Sep 17 00:00:00 2001
+From d85305d0c7b41c623f85a48368adedc32a1d830c Mon Sep 17 00:00:00 2001
 From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
 Date: Tue, 14 May 2024 16:10:43 +0800
-Subject: [PATCH] add pr 34
+Subject: [PATCH 1/2] add pr 34
 
 see https://github.com/KIT-MRT/mrt_cmake_modules/pull/34
 ---

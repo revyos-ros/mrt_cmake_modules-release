@@ -1,4 +1,4 @@
-release_repo_url: git@github.com:revyos-ros/mrt_cmake_modules-release
+release_repo_url: git@github.com:revyos-ros/mrt_cmake_modules-release.git
 tracks:
   dashing:
     actions:

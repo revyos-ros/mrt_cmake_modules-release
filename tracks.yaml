@@ -116,10 +116,10 @@ tracks:
     - git-bloom-generate -y rosrpm --prefix release/:{ros_distro} :{ros_distro} -i
       :{release_inc} --os-name rhel
     devel_branch: master
-    last_version: 1.0.9
+    last_version: 1.0.11
     name: mrt_cmake_modules
     patches: null
-    release_inc: '6'
+    release_inc: '1'
     release_repo_url: git@github.com:revyos-ros/mrt_cmake_modules-release.git
     release_tag: :{version}
     ros_distro: humble

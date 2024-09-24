@@ -1,3 +1,26 @@
+## mrt_cmake_modules (jazzy) - 1.0.11-2
+
+The packages in the `mrt_cmake_modules` repository were released into the `jazzy` distro by running `/home/z572/gits/revyos-ros/venv2/bin/bloom-release -r jazzy mrt_cmake_modules --override-release-repository-push-url git@github.com:revyos-ros/mrt_cmake_modules-release.git` on `Tue, 24 Sep 2024 05:45:58 -0000`
+
+The `mrt_cmake_modules` package was released.
+
+Version of package(s) in repository `mrt_cmake_modules`:
+
+- upstream repository: https://github.com/KIT-MRT/mrt_cmake_modules.git
+- release repository: https://github.com/revyos-ros/mrt_cmake_modules-release.git
+- rosdistro version: `1.0.11-2`
+- old version: `1.0.11-1`
+- new version: `1.0.11-2`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## mrt_cmake_modules (jazzy) - 1.0.11-1
 
 The packages in the `mrt_cmake_modules` repository were released into the `jazzy` distro by running `/home/z572/gits/revyos-ros/venv2/bin/bloom-release -r jazzy mrt_cmake_modules --override-release-repository-push-url git@github.com:revyos-ros/mrt_cmake_modules-release.git` on `Tue, 24 Sep 2024 05:43:41 -0000`

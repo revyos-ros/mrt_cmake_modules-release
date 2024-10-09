@@ -1,0 +1,19 @@
+From d3c80800d83d3abbb2c9938872fc67651ff8fbb8 Mon Sep 17 00:00:00 2001
+From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
+Date: Wed, 9 Oct 2024 15:34:18 +0800
+Subject: [PATCH 3/4] Revert "add miss series."
+
+This reverts commit 9f1e665d1d5804a6c4204a1c87487a19676b1049.
+---
+ debian/patches/series | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/debian/patches/series b/debian/patches/series
+index 1cf02f9..e69de29 100644
+--- a/debian/patches/series
++++ b/debian/patches/series
+@@ -1 +0,0 @@
+-pr-34.patch
+-- 
+2.46.0
+

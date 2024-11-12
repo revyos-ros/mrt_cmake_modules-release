@@ -1,0 +1,56 @@
+From 02ff358310378f37cb503df337c24afbd496ee50 Mon Sep 17 00:00:00 2001
+From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
+Date: Tue, 12 Nov 2024 15:15:06 +0800
+Subject: [PATCH 2/2] Revert "add pr 34 patch."
+
+This reverts commit e092fcf7445251f6f3348de98bdb11beec4729c8.
+---
+ debian/patches/pr-34.patch | 27 ---------------------------
+ debian/patches/series      |  1 -
+ 2 files changed, 28 deletions(-)
+ delete mode 100644 debian/patches/pr-34.patch
+ delete mode 100644 debian/patches/series
+
+diff --git a/debian/patches/pr-34.patch b/debian/patches/pr-34.patch
+deleted file mode 100644
+index c56406a..0000000
+--- a/debian/patches/pr-34.patch
++++ /dev/null
+@@ -1,27 +0,0 @@
+-From b27f1a064037e04dc98512f7ffcbfe54905130fa Mon Sep 17 00:00:00 2001
+-From: Silvio Traversaro <silvio@traversaro.it>
+-Date: Sat, 20 Apr 2024 14:48:36 +0200
+-Subject: [PATCH] FindGeographicLib: Fix for GeographicLib 2.* and Windows
+-
+-Since GeographicLib version 2, the library name changed from `libGeographic.so` to `libGeographicLib.so`, see https://github.com/geographiclib/geographiclib/blob/5e4425da84a46eb70e59656d71b4c99732a570ec/NEWS#L208 .
+-
+-To ensure that GeographicLib 2.* is found correcty, I think we should add also `GeographicLib` to the names used by `find_library`.
+-
+-Furthermore, on Windows the import library is called `GeographicLib-i.lib` (see https://github.com/geographiclib/geographiclib/blob/v2.3/src/CMakeLists.txt#L119), so to find the library correctly on Windows we also look for GeographicLib-i .
+----
+- cmake/Modules/FindGeographicLib.cmake | 2 +-
+- 1 file changed, 1 insertion(+), 1 deletion(-)
+-
+-diff --git a/cmake/Modules/FindGeographicLib.cmake b/cmake/Modules/FindGeographicLib.cmake
+-index 63dfe30..a5598d5 100644
+---- a/cmake/Modules/FindGeographicLib.cmake
+-+++ b/cmake/Modules/FindGeographicLib.cmake
+-@@ -10,7 +10,7 @@ find_package(PkgConfig)
+- find_path(GeographicLib_INCLUDE_DIR GeographicLib/Config.h PATH_SUFFIXES GeographicLib)
+- set(GeographicLib_INCLUDE_DIRS ${GeographicLib_INCLUDE_DIR})
+- 
+--find_library(GeographicLib_LIBRARIES NAMES Geographic)
+-+find_library(GeographicLib_LIBRARIES NAMES Geographic GeographicLib GeographicLib-i)
+- 
+- include(FindPackageHandleStandardArgs)
+- find_package_handle_standard_args(GeographicLib DEFAULT_MSG GeographicLib_LIBRARIES GeographicLib_INCLUDE_DIRS)
+diff --git a/debian/patches/series b/debian/patches/series
+deleted file mode 100644
+index 1cf02f9..0000000
+--- a/debian/patches/series
++++ /dev/null
+@@ -1 +0,0 @@
+-pr-34.patch
+-- 
+2.46.0
+

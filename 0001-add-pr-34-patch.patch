@@ -1,7 +1,7 @@
-From d8399cd3b0b63052179dac93773eb90b46035e96 Mon Sep 17 00:00:00 2001
+From e092fcf7445251f6f3348de98bdb11beec4729c8 Mon Sep 17 00:00:00 2001
 From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
 Date: Wed, 19 Jun 2024 14:03:09 +0800
-Subject: [PATCH] add pr 34 patch.
+Subject: [PATCH 1/2] add pr 34 patch.
 
 ---
  debian/patches/pr-34.patch | 27 +++++++++++++++++++++++++++
@@ -51,5 +51,5 @@ index 0000000..1cf02f9
 @@ -0,0 +1 @@
 +pr-34.patch
 -- 
-2.45.2
+2.46.0
 
